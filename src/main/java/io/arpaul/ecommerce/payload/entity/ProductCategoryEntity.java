@@ -19,5 +19,5 @@ public class ProductCategoryEntity {
     @Column(name = "category_name")
     private String categoryName;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "category")
-    private Set<ProductEntity> products;
+    private Set<Product> products;
 }
